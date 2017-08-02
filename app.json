@@ -1,7 +1,8 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/get_user_fail/get_user_fail"
   ],
   "window":{
     "backgroundTextStyle":"light",

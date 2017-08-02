@@ -1,0 +1,7 @@
+<view class="container">
+	<view class="errorinfo">
+		<icon type="warn" size="70" color="red"></icon>
+		<text>授权失败</text>
+		<button type="primary" size="default" form-type="submit" open-type="getUserInfo" bindgetuserinfo="success" style="margin: 2em 1em;" >重新授权</button>
+	</view>
+</view>

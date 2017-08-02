@@ -1,0 +1,8 @@
+.errorinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.errorinfo-button{
+	margin: 2em 1em;
+}

@@ -16,8 +16,14 @@ App({
       wx.getUserInfo({
         withCredentials: false,
         success: function(res) {
+          console.log(res.userInfo) 
           that.globalData.userInfo = res.userInfo
-          typeof cb == "function" && cb(that.globalData.userInfo)
+          typeof cb == "function" && cb(that.globalData.userInfo)          
+        },
+        fail: function() {
+          wx.redirectTo({
+            url: '../get_user_fail/get_user_fail'
+          })
         }
       })
     }

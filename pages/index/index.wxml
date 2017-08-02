@@ -5,7 +5,7 @@
     <text class="userinfo-nickname">{{userInfo.nickName}}</text>
     <text class="userinfo-nickname">{{userInfo.city}}</text>
     <text class="userinfo-nickname">{{userInfo.country}}</text>
-    <text class="userinfo-nickname">{{gender}}</text>
+    <text class="userinfo-nickname">{{userInfo.gender==0?'未知':userInfo.gender==1?'男':'女'}}</text>
     <text class="userinfo-nickname">{{userInfo.language}}</text>
     <text class="userinfo-nickname">{{userInfo.province}}</text>
   </view>

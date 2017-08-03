@@ -9,7 +9,4 @@
     <text class="userinfo-nickname">{{userInfo.language}}</text>
     <text class="userinfo-nickname">{{userInfo.province}}</text>
   </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
 </view>

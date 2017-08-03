@@ -1,14 +1,17 @@
 Page({
   data: {
     imgUrls: [
-      '../../resources/1.jpg',
-      '../../resources/2.jpg',
-      '../../resources/3.jpg'
+      {url:'../../resources/1.jpg',id:1},
+      {url:'../../resources/2.jpg',id:2},
+      {url:'../../resources/3.jpg',id:3}
     ],
-    indicatorDots: false,
+    indicatorDots: true,
     autoplay: false,
     interval: 5000,
     duration: 1000
+  },
+  onLoad:function(e){
+  	console.log("==> pages/guide/guide")
   },
   changeIndicatorDots: function(e) {
     this.setData({
@@ -29,5 +32,12 @@ Page({
     this.setData({
       duration: e.detail.value
     })
+  },
+  index:function(e){
+  	var that=this
+  	console.log("==> click index button!")
+  	wx.switchTab({
+  		url:'../index/index'
+  	})
   }
 })

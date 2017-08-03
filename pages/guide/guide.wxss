@@ -1,0 +1,15 @@
+.guide-container{
+	position:absolute;
+	top:0;
+	left:0;	
+	width:100%;
+	height: 100%;
+	align-items:center;
+	align-content:center;
+	/*两端布局*/
+	justify-content:space-between;
+	margin-top:520px;
+}
+.guide-button-index{
+	width:95%;
+}

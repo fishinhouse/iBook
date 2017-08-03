@@ -1,9 +1,15 @@
 <swiper indicator-dots="{{indicatorDots}}"
-  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" style="height:620px;">
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" style="height:610px;">
   <block wx:for="{{imgUrls}}">
-    <swiper-item >
-      <image mode="widthFix" src="{{item}}" class="slide-image" style="display:inline;" />
+    <swiper-item wx:if="{{item.id!=3}}" >
+      <image mode="widthFix" src="{{item.url}}" class="slide-image" style="display:inline;" />
     </swiper-item>
+	<swiper-item wx:if="{{item.id==3}}" >
+      <image mode="widthFix" src="{{item.url}}" class="slide-image" style="display:inline;" />
+      <view class="guide-container">
+      	<button type="primary" plain="true" form-type="submit" bindtap="index" class="guide-button-index" >进入</button>
+      </view>
+    </swiper-item>    
   </block>
 </swiper>
 <!--

@@ -3,7 +3,7 @@
 var app = getApp()
 Page({
   data: {
-    motto: 'Hello World'
+    motto: ''
   },
   //事件处理函数
   bindViewTap: function() {
@@ -12,7 +12,7 @@ Page({
     })
   },
   onLoad: function () {
-    console.log('onLoad')
+    console.log('==> onLoad index page!')
     var that = this
     //调用应用实例的方法获取全局数据
     app.getUserInfo(function(userInfo){
